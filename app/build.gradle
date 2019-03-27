@@ -30,4 +30,6 @@ dependencies {
 
     //Google play services
     implementation 'com.google.android.libraries.places:places:1.0.0'
+
+    implementation 'com.github.ybq:Android-SpinKit:1.2.0'
 }

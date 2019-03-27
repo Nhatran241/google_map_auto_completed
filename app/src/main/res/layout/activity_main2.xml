@@ -21,11 +21,26 @@
 
         android:id="@+id/edit_query"
         android:layout_width="match_parent"
-        android:layout_height="200dp" />
-    <Button
-        android:layout_below="@id/edit_query"
-        android:onClick="Click"
+        android:layout_height="60dp" />
+    <RelativeLayout
+        android:layout_below="@+id/edit_query"
         android:layout_width="match_parent"
-        android:layout_height="100dp" />
+        android:layout_height="wrap_content">
+        <com.github.ybq.android.spinkit.SpinKitView
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/spin_kit"
+            style="@style/SpinKitView.Large.Circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:SpinKit_Color="@color/colorAccent" />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>
 
 </RelativeLayout>
